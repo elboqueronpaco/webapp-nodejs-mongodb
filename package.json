@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "./node_modules/.bin/babel src --out-dir public",
-    "babel-node": "babel-node src/server.js",
+    "babel-node": "babel-node src/index.js",
     "restart": "nodemon --exec npm run babel-node"
   },
   "repository": {
@@ -19,7 +19,14 @@
   },
   "homepage": "https://github.com/elboqueronpaco/webapp-nodejs-mongodb#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "bcrypt-nodejs": "0.0.3",
+    "connect-flash": "^0.1.1",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.8",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
