@@ -1,0 +1,31 @@
+{
+  "name": "webapp-nodejs-mongodb",
+  "version": "1.0.0",
+  "description": "Creación de una WebApp con nodejs y mongodb",
+  "main": "server.js",
+  "scripts": {
+    "start": "./node_modules/.bin/babel src --out-dir public",
+    "babel-node": "babel-node src/server.js",
+    "restart": "nodemon --exec npm run babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elboqueronpaco/webapp-nodejs-mongodb.git"
+  },
+  "author": "Francisco Javier Moreno García <elboqueronpaco@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elboqueronpaco/webapp-nodejs-mongodb/issues"
+  },
+  "homepage": "https://github.com/elboqueronpaco/webapp-nodejs-mongodb#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "nodemon": "^1.18.5"
+  }
+}
